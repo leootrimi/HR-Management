@@ -1,0 +1,90 @@
+.home-page {
+    padding: 20px; /* Optional: Add padding as needed */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+  }
+  
+  .search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .search-icon{
+    margin-right: 2%;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 80%;
+  }
+  
+  .profile-icon {
+   margin-left: 5%;
+   margin-right: 3%;
+   color: #433D8B;
+
+  }
+  
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns as needed */
+    gap: 20px; /* Optional: Adjust spacing */
+  }
+  .icons{
+    margin-top: -30%;
+    color: #433D8B;
+  }
+  
+  .metric-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .metric-box svg {
+    margin-right: 20px; /* Adjust spacing between icon and text */
+  }
+  
+  .metric-content {
+    flex: 1;
+  }
+  
+  .metric-content h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .metric-content p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .analysis {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 96.5%;
+    display: flex;
+  }
+  .ref1{
+    width: 100%;
+    margin-right: 50px;
+}
+.ref2{}
+  
+  
