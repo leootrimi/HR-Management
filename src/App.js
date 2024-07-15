@@ -4,6 +4,7 @@ import './App.css';
 import Login from './Components/Login/Login';
 import SideBar from './Components/SideBar/SideBar';
 import HomePage from './pages/HomePage';
+import Employers from './pages/Employers';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <div className="content1">
                   <Routes>
                     <Route path="/dashboard" element={<HomePage />} />
+                    <Route path="/employers" element={<Employers />} />
                   </Routes>
                 </div>
               </div>
