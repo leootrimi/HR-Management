@@ -14,7 +14,7 @@ const SideBar = () => {
       <div className="items">
       <ul>
         <li className="active">
-          <a href="#dashboard">
+          <a href="/admin/dashboard">
             <FontAwesomeIcon icon={faTachometerAlt} className="icon" />
             Dashboard
           </a>
@@ -32,7 +32,7 @@ const SideBar = () => {
           </a>
         </li>
         <li>
-          <a href="#emplyoers">
+          <a href="/admin/employers">
             <FontAwesomeIcon icon={faUsers} className="icon" />
             Employers
           </a>
