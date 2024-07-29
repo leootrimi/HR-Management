@@ -26,7 +26,7 @@ const SideBar = () => {
           </a>
         </li>
         <li>
-          <a href="#schedule">
+          <a href="/admin/schedule">
             <FontAwesomeIcon icon={faCalendar} className="icon" />
             Schedule
           </a>

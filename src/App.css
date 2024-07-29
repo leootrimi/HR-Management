@@ -1,11 +1,13 @@
-
+.App{
+  width: 100%;
+}
 .main-layout1 {
   display: flex;
-  flex: 1; /* Take remaining space */
+  flex: 1; 
 }
 
 .content1 {
   flex: 1; /* Take remaining space */
   margin-left: 17%; /* Optional: Add padding for content */
-  background-color: #f8f8f8;
+  background-color: #FEFCFF;
 }

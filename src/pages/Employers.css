@@ -28,6 +28,9 @@
     box-sizing: border-box; 
     width: 23%;
 }
+a{
+    width: 100%;
+}
 
 .filter-bar button{
     color: white;
