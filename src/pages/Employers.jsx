@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { groupByRole, getMetrics } from '../utils/employer'
 import './Employers.css';
 
 const employees = [
@@ -15,16 +16,6 @@ const employees = [
     { id: 11, name: 'Amber Foster', username: '@amber', role: 'Support', img: 'https://via.placeholder.com/50' }
 ];
 
-const groupByRole = (employees) => {
-    return employees.reduce((groups, employee) => {
-        const role = employee.role;
-        if (!groups[role]) {
-            groups[role] = [];
-        }
-        groups[role].push(employee);
-        return groups;
-    }, {});
-};
 
 const Employers = () => {
     const [filterRole, setFilterRole] = useState('');
@@ -46,11 +37,7 @@ const Employers = () => {
     });
 
     const groupedEmployees = groupByRole(filteredEmployees);
-
-    // Calculate metrics
-    const totalEmployees = employees.length;
-    const activeEmployees = employees.filter(employee => employee.role !== 'Support').length; // Example logic for active employees
-    const supportEmployees = employees.filter(employee => employee.role === 'Support').length;
+    const { totalEmployees, activeEmployees, supportEmployees } = getMetrics(employees);
 
     return (
         <div className="employers-management">
@@ -95,7 +82,7 @@ const Employers = () => {
                     value={filterName}
                     onChange={handleNameChange}
                 />
-                <button className="add-user-btn">Add User</button>
+               <a href='/admin/add'> <button className="add-user-btn">Add User</button></a>
             </div>
             {Object.keys(groupedEmployees).map((role) => (
                 <div key={role} className="role-section">
